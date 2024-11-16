@@ -1,0 +1,13 @@
+{ "type": "MOD"
+, "name": "extruder"
+, "title": "Extruder Tool"
+, "dev_state": "ACTIVELY_DEVELOPED"
+, "tags": ["building", "creative", "world_tools"]
+, "license": "EUPL-1.2"
+, "media_license": "CC-BY-SA-4.0"
+, "repo": "https://git.sr.ht/~fgaz/minetest-extruder"
+, "website": "https://sr.ht/~fgaz/minetest-extruder/"
+, "issue_tracker": "https://todo.sr.ht/~fgaz/minetest-mods"
+, "forums": 28702
+, "short_description": "Adds an extruder tool that can extend continuous surfaces towards the node face that was clicked"
+}

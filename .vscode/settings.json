@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.globals": [
+        "minetest",
+        "mesecon",
+        "vector",
+        "ItemStack",
+        "mcl_fovapi",
+        "ctf_core"
+    ]
+}

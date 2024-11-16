@@ -38,7 +38,7 @@ function api.bulletcast(bullet, pos1, pos2, objects, liquids)
 						return hitpoint
 					end
 				elseif hitpoint.type == "object" then
-					if not options.object or options.object(hitpoint.ref) then
+					if not options.object or options.object(hitpoint.ref) or hitpoint.ref:is_player() then
 						return hitpoint
 					end
 				end
