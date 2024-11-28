@@ -1,0 +1,27 @@
+[submodule "blockhead"]
+	path = blockhead
+	url = https://codeberg.org/SilverSandstone/blockhead.git
+[submodule "remove_unknowns"]
+	path = remove_unknowns
+	url = https://github.com/acmgit/remove_unknowns.git
+[submodule "public_tp"]
+	path = public_tp
+	url = https://github.com/JamesClarke7283/public_tp
+[submodule "personal_log"]
+	path = personal_log
+	url = https://github.com/minetest-mods/personal_log
+[submodule "minetest-entity_modifier"]
+	path = minetest-entity_modifier
+	url = https://github.com/j8r/minetest-entity_modifier
+[submodule "meshport"]
+	path = meshport
+	url = https://github.com/random-geek/meshport
+[submodule "mcl_wieldlight"]
+	path = mcl_wieldlight
+	url = https://codeberg.org/mineclonia/mcl_wieldlight.git
+[submodule "mcl_bubble_column"]
+	path = mcl_bubble_column
+	url = https://github.com/Minetest-j45/mcl_bubble_column
+[submodule "leads"]
+	path = leads
+	url = https://codeberg.org/SilverSandstone/leads
