@@ -25,3 +25,6 @@
 [submodule "leads"]
 	path = leads
 	url = https://codeberg.org/SilverSandstone/leads
+[submodule "cinematic_zoom"]
+	path = cinematic_zoom
+	url = https://github.com/notYoosung/cinematic_zoom.git
