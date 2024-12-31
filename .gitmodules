@@ -28,3 +28,6 @@
 [submodule "cinematic_zoom"]
 	path = cinematic_zoom
 	url = https://github.com/notYoosung/cinematic_zoom.git
+[submodule "edit"]
+	path = edit
+	url = https://github.com/minetest-mods/edit
