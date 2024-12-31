@@ -32,12 +32,12 @@ minetest.register_node(password_block_name, {
             minetest.show_formspec(player:get_player_name(), modname .. ":password_form_"..minetest.pos_to_string(pos), "field[password;Enter Password;]")
         end
     end,
-    mesecons = {
-        receptor = {
-            rules = mesecon.rules.mcl_alldirs_spread,
-            state = mesecon.state.off
-        }
-    },
+    -- mesecons = {
+    --     receptor = {
+    --         rules = mesecon.rules.mcl_alldirs_spread,
+    --         state = mesecon.state.off
+    --     }
+    -- },
     mcl_redstone = {
         power = 0,
         power_last = 0,
@@ -78,12 +78,12 @@ minetest.register_node(temp_node_name, {
     on_timer = function(pos, elapsed)
         -- local meta = minetest.get_meta(pos)
         minetest.swap_node(pos, {name = password_block_name}) -- Change back to password block
-        mesecon.receptor_off(pos, mesecon.rules.mcl_alldirs_spread)
+        -- mesecon.receptor_off(pos, mesecon.rules.mcl_alldirs_spread)
     end,
     mesecons = {
         receptor = {
-            rules = mesecon.rules.mcl_alldirs_spread,
-            state = mesecon.state.on
+            -- rules = mesecon.rules.mcl_alldirs_spread,
+            -- state = mesecon.state.on
         }
     },
 })
@@ -110,7 +110,7 @@ minetest.register_on_player_receive_fields(function(player, formname, fields)
         if fields.password == meta:get_string("password") then
             -- Change to temporary node for 4 seconds
             minetest.swap_node(pos, {name = temp_node_name})
-            mesecon.receptor_on(pos, mesecon.rules.mcl_alldirs_spread)
+            -- mesecon.receptor_on(pos, mesecon.rules.mcl_alldirs_spread)
             minetest.chat_send_player(player:get_player_name(), "Password correct! Block changed for 4 seconds.")
             minetest.get_node_timer(pos):start(5.0)         -- Change back to password block after 4 seconds
         else
